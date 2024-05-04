@@ -1,0 +1,325 @@
+/* ======== globale ===== */
+
+.w-90 {
+  width: 88%;
+  margin: auto;
+}
+
+h2 {
+  color: #feb900;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.fs-70 {
+  font-size: 50px;
+}
+
+/* ======== header ===== */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../img/projects/construction-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: bg-header 7s 1s ease-in infinite alternate;
+}
+
+header nav a {
+  color: white !important;
+  position: relative;
+  overflow: hidden;
+}
+
+header nav {
+  background-color:  #ce9e19cf;
+}
+
+header nav a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(247, 237, 218);
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: all 0.5s;
+}
+
+header nav a:hover::after {
+  left: 0;
+}
+
+header div article h1 {
+  position: relative;
+}
+header div article h1::after {
+  content: "";
+  width: 10%;
+  height: 5px;
+  background-color: orange;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+/* ======== section 2 ======= */
+.bg-light {
+  background-color: #f5f6f7;
+}
+
+.tow h3 {
+  position: relative;
+}
+.tow h3::after {
+  content: "";
+  width: 15%;
+  height: 5px;
+  background-color: orange;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  border-radius: 20px;
+}
+
+/* ======== section 3 ======= */
+
+.bg-number {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/hero-carousel/hero-carousel-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.three .card:hover img {
+  transition: all 1s;
+}
+
+.three .card .col-md-5 {
+  overflow: hidden;
+}
+
+.three .card:hover img {
+  transform: rotate(-10deg) scale(1.2);
+}
+
+/* ======== section 4 ======= */
+
+.four .layer {
+  height: 5px;
+}
+
+.four .card h3 {
+  position: relative;
+  display: inline;
+}
+
+.four .card h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  background-color: gainsboro;
+}
+
+.four .card:hover h3::after {
+  background-color: #feb900 !important;
+  transition: all 0.5s;
+}
+.four .card:hover .icon-layer {
+  color: #feb900 !important;
+  transition: all 0.5s;
+}
+
+.four .card a {
+  color: #feb900 !important;
+  font-size: 18px;
+}
+
+/* ======== five  ======= */
+
+section.five article .line:hover h4 {
+  color: #feb900;
+}
+
+section.five article h2 {
+  position: relative;
+}
+
+section.five article h2::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 4px;
+  bottom: -10px;
+  left: 0;
+  background-color: #feb900;
+}
+
+section.five article .line:hover .icon {
+  background-color: #feb900 !important;
+  transition: all 0.5s;
+}
+section.five article .line:hover i {
+  color: #ffffff !important;
+  transition: all 0.5s;
+}
+
+/* ======== sex ======= */
+section.six .tab-content h3 {
+  position: relative;
+}
+section.six .tab-content h3::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  background-color: #feb900;
+}
+
+section.six ul li button {
+  color: black;
+  position: relative;
+}
+
+section.six ul li {
+  position: relative;
+}
+section.six ul li::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 5px;
+  bottom: -20px;
+  left: 0;
+  background-color: gainsboro;
+}
+
+section.six ul li:hover::after {
+  background-color: #feb900;
+}
+
+section.six .active {
+  background-color: #feb900 !important;
+}
+
+section.six .tab-pane {
+  background-color: #e9ecef !important;
+}
+
+/* ======== 7 ======= */
+
+section.Our-Projects figure .img-fig {
+  position: relative;
+}
+
+section.Our-Projects figure .img-fig .layer i {
+  font-size: 26px;
+  padding: 10px;
+}
+
+section.Our-Projects figure .img-fig .layer i:hover {
+  color: #feb900 !important;
+}
+
+section.Our-Projects figure .img-fig .layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  flex-flow: wrap row;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+section.Our-Projects figure:hover .layer {
+  opacity: 1;
+}
+
+section.Our-Projects figure:hover img {
+  transition: transform 0.5s;
+  transform: scale(1.1) rotate(-3deg);
+}
+
+section.Our-Projects nav button {
+  color: black;
+}
+section.Our-Projects nav button:hover {
+  color: #feb900;
+}
+
+/* ======== blog ======= */
+
+section.Blog .col:hover h5 {
+  color: #feb900;
+}
+
+section.Blog .col:hover a {
+  color: #feb900 !important;
+}
+
+section.Blog img {
+  transition: all 0.5s;
+}
+section.Blog .col:hover img {
+  transform: scale(1.1);
+}
+
+/* ======== footer ======= */
+
+.bg-footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+footer div ul li a {
+  color: #e9ecefcc;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+footer div ul li a:hover {
+  background-color: #feb900 !important;
+  border: 2px solid;
+  color:#ffffff;
+
+}
+
+footer i:hover {
+  background-color: #feb900 !important;
+}
+
+/* ======== animition ======= */
+
+@keyframes bg-header {
+  20% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(../img/projects/construction-2.jpg);
+  }
+
+  70% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(../img/projects/construction-3.jpg);
+  }
+}
+
